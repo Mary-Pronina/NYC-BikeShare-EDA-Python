@@ -212,3 +212,34 @@ plt.grid(True)
 plt.show()
 ```
 ![Destribution of Trip Duration](https://github.com/user-attachments/assets/84d934fe-558a-4b5f-8171-ad71ff0777f6)
+
+```python
+# Example: Filtering out trip durations longer than a reasonable threshold
+df_filtered = df[df['Trip Duration'] < 10000]  # Adjust the threshold as needed
+sns.histplot(df_filtered['Trip Duration'], bins=30, kde=True)
+plt.title('Filtered Distribution of Trip Durations')
+plt.xlabel('Duration (seconds)')
+plt.ylabel('Frequency')
+plt.show()
+```
+![Filtered Distribution of Trip Duration](https://github.com/user-attachments/assets/186bc69d-6de4-43b8-bb7f-83598294fb35)
+
+```python
+# Example: Filtering out trip durations longer than a reasonable threshold
+df_filtered = df[df['Trip Duration'] < 3600]  # Adjust the threshold as needed
+sns.histplot(df_filtered['Trip Duration'], bins=30, kde=True)
+plt.title('Filtered Distribution of Trip Durations')
+plt.xlabel('Duration (seconds)')
+plt.ylabel('Frequency')
+plt.show()
+```
+![Filtered Distribution of Trip Duration (1)](https://github.com/user-attachments/assets/8bcc2917-dbe8-496a-8b07-294ed29310c0)
+
+The goal of these plots is to better understand the distribution of trip durations by filtering out extreme values that may skew the visualization. In real-world data, outliers such as very long trips (e.g., over an hour or over 10,000 seconds) can distort the overall shape of the histogram and make it harder to observe typical patterns.
+
+By applying thresholds like Trip Duration < 10,000 or Trip Duration < 3600, the plots focus on more reasonable, common trip durations. This makes the distribution easier to interpret and helps identify central tendencies and common trip lengths more clearly.
+
+**Box Plot:**
+
+Purpose: A box plot helps us visualize the spread of the data and detect outliers. It shows the median (middle value), quartiles, and outliers.
+
