@@ -24,7 +24,7 @@ Goal:
 To create a clean and insightful dataset that shows how New Yorkers use bike sharing services. The aim is to understand who uses the service, when they ride, and how long their trips typically last. These insights can support better decision-making in user behavior modeling and urban planning.
 
 This project was completed on Kaggle, where I performed all the analysis and visualizations using Python.
-You can view the full notebook here: [NYC Bike Share EDA on Kaggle.](https://www.kaggle.com/code/marypronina/nyc-bike-share-eda/edit)
+You can view the full notebook here: [NYC Bike Share EDA on Kaggle.](https://www.kaggle.com/code/marypronina/nyc-bike-share-eda])
 
 ## Exploring the Dataset:
 ```python
